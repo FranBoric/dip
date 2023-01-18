@@ -97,9 +97,15 @@ g = (alpha_1/(1.0+A/tau_1)+beta_1*A/(1.0+A/tau_1))*M_t*ds(2)
 ## Početak evolucije
 t = 0
 
-vtkfile = File('solution.pvd')
+vtkfile = File('./2D/solution.pvd')
 
 M_n, A_n = sol_n.split()
+
+
+print(np.array(M_n.vector()))
+
+input("Press enter to continue..")
+
 vtkfile << (M_n, t)
 
 for n in range(num_steps):
