@@ -1,6 +1,6 @@
 # Diplomski rad - Matematičko modeliranje ateroskleroze
 
 Implementacija u Fenicsu 
-\begin{align*}
+$$\begin{align*}
  \frac{\partial M}{\partial t}
-\end{align*}
+\end{align*}$$
